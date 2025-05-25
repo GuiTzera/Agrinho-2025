@@ -8,11 +8,11 @@ body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
-  color: #333;
+  color: #000; /* Cor da fonte preta */
 }
 
 header {
-  background: url('imagens/natureza.jpg') no-repeat center center/cover;
+  background-color: #2e7d32; /* Fundo sólido para substituir a imagem */
   height: 90vh;
   color: white;
   display: flex;
@@ -68,8 +68,7 @@ nav {
 }
 
 .content img {
-  width: 50%;
-  border-radius: 10px;
+  display: none; /* Esconde as imagens */
 }
 
 .content.reverse {
@@ -78,7 +77,7 @@ nav {
 }
 
 .text {
-  width: 50%;
+  width: 100%;
 }
 
 .cta {
@@ -101,6 +100,12 @@ nav {
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #388e3c;
+  color: white;
 }
 
 footer {
@@ -119,7 +124,7 @@ footer {
     flex-direction: column;
   }
 
-  .text, .content img {
+  .text {
     width: 100%;
   }
 
