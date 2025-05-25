@@ -123,3 +123,11 @@ footer {
     align-items: center;
   }
 }
+
+.descricao-menor {
+  font-size: 0.95em;
+  margin-top: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
